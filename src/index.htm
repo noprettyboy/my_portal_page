@@ -10,7 +10,7 @@
 <header id="header">
     <nav id="header-nav" class="navbar navbar-default" role="navigation">
         <div class="header-nav-content">
-            <img src="img/logo.png" class="header-nav-img" alt="Baidu-Vdata" />
+            <img src="img/logo.png" class="header-nav-img" alt="Baidu-Vdata" /><strong class="header-nav-strong">数据可视化平台</strong>
             
             <ul id="header-nav-content-menu" class="nav navbar-nav">
                 <li name="shouye" class="current">
@@ -27,6 +27,18 @@
                 </li>
                 <li name="about">
                 <a>关于平台</a>
+                </li>
+            </ul>
+            <ul id="header-nav-content-menu2" class="nav navbar-nav">
+                <li class="v-line">|</li>
+                <li name="loginfo" class="loginfo" style="display:none;">
+                <a></a>
+                </li>
+                <li name="login">
+                <a>登录</a>
+                </li>
+                <li name="logout">
+                <a>注销</a>
                 </li>
             </ul>
         </div>
@@ -164,10 +176,33 @@
 <footer id="footer">
     <div class="footer-div">Copyright © 2014 Baidu | 京ICP证030173号 </div>
 </footer>
-
+<div id="login" style="">
+    <div name="login-header" class="login-header">
+        <div class="login-header-content">
+            <span>登录百度帐号</span>
+            <a class="login-header-a"></a>
+        </div>
+    </div>
+    <div name="login-content" class="login-content">
+        <div class="login-content-content">
+            <label id="error_result"></label>
+            <input type="text" id="username" name="username" placeholder="用户名" />
+            <input type="password" id="password" name="password" placeholder="密码" />
+            <br>
+            <span>
+                <input type="checkbox" id="enablepw" name="enamblepw" /><label class="checkbox-text">下次自动登录</label>
+            </span>
+            <br>
+            <br>
+            <br>
+            <input type="button" id="submit" value="登录" class="btn btn-primary" />
+        </div>
+    </div>
+</div>
 </body>
 <script src="js/jquery-2.0.3.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/portal.js"></script>
+<script src="js/myself-plugin.js"></script>
 </html>
 
